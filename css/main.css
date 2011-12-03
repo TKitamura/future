@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.radius_sample {
+	border-radius: 5px;        /* CSS3草案 */  
+	-webkit-border-radius: 5px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 5px;   /* Firefox用 */ 	
+}
+
+.grad_sample {
+ 	background: -moz-linear-gradient(top, #fccf01, #ec7202);
+	background: -webkit-gradient(linear, left top, left bottom, from(#fccf01), to(#ec7202));	
+}
+
+
+.shadow_sample{
+	-webkit-box-shadow: 3px 3px 5px 0px #777; /* Safari, Chrome用  x_offset,y_offset,blursize,shadow_size,color*/
+	-moz-box-shadow: 3px 3px 5px 0px #777; /* Firefox用 */
+	box-shadow: 3px 3px 5px 0px #777; /* CSS3 */
+}
+
+.inner_shadow_sample{
+	-webkit-box-shadow: inset 0px 0px 10px 0px #777; /* Safari, Chrome用 */
+	-moz-box-shadow: inset 0px 0px 10px 0px #777; /* Firefox用 */
+	box-shadow: inset 0px 0px 10px 0px #777; /* CSS3 */
+}
+
+.multiple_shadow_sample {
+	-webkit-box-shadow: 3px 3px 5px 0px #777, inset 0px 0px 10px 0px #fff;
+	-moz-box-shadow: 3px 3px 5px 0px #777, inset 0px 0px 10px 0px #fff;
+	box-shadow: 3px 3px 5px 0px #777, inset 0px 0px 10px 0px #fff;
+}
+
+.boxsizing_sample {
+	-webkit-box-sizing: border-box; /* Safari, Chrome用 */
+	-moz-box-sizing: border-box; /* Firefox用 */
+	-ms-box-sizing: border-box; /* IE8用 */
+	box-sizing: border-box; /* CSS3（Opera用） */
+}
+
+.spotlight_sample{
+	width: 1000px;
+	height: 500px;
+	background: -webkit-gradient(radial, center top, 0, center top, 500, from(rgba(255,255,255,0.7)), to(rgba(255,255,255,0)));
+	background: -moz-radial-gradient(center top, circle farthest-side, rgba(255,255,255,0.7), rgba(255,255,255,0));
+}
+
+div#a {
+	position:relative;
+	top:50px;
+	left:50px;
+	
+	width:20px;
+	height:20px;
+	background:#5ab078;
+	border:#FFFFFF solid 2px;
+	border-radius: 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px;   /* Firefox用 */ 
+	opacity:0.9;
+	
+	-webkit-box-shadow: 0px 0px 4px 0px #777;
+	-moz-box-shadow: 0px 0px 4px 0px #777;
+	box-shadow: 0px 0px 4px 0px #777;
+	
+	-webkit-box-sizing: border-box; /* Safari, Chrome用 */
+	-moz-box-sizing: border-box; /* Firefox用 */
+	-ms-box-sizing: border-box; /* IE8用 */
+	box-sizing: border-box; /* CSS3（Opera用） */
+	
+	
+}
+
+.anchor {
+	display:none;	
+}
+
+p.anchor_text {
+	letter-spacing:1px;
+	font-size:90%;
+	font-weight:bold;
+	padding:0;
+	margin:0;
+	position:relative;
+	top:10px;
+	left:35px;
+	color:white;
+	height:20px;
+	width:0px;
+	overflow:hidden;
+		
+}
+
+.annotation_before {
+	display:block;
+	position:absolute;
+	
+	width:20px;
+	height:20px;
+	background:#5ab078;
+	border:#FFFFFF solid 2px;
+	border-radius: 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px;   /* Firefox用 */ 
+	opacity:0.9;
+	
+	-webkit-box-shadow: 0px 0px 4px 0px #777;
+	-moz-box-shadow: 0px 0px 4px 0px #777;
+	box-shadow: 0px 0px 4px 0px #777;
+	
+	-webkit-box-sizing: border-box; /* Safari, Chrome用 */
+	-moz-box-sizing: border-box; /* Firefox用 */
+	-ms-box-sizing: border-box; /* IE8用 */
+	box-sizing: border-box; /* CSS3（Opera用） */
+	
+	
+}
+
+
+
+div#a:active {
+		
+}
+
+
+
+@-webkit-keyframes popup {
+
+0%{ width:20px;
+	height:20px;
+	border-radius: 10px;        /* CSS3草案 */  
+	-webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 10px;   /* Firefox用 */ 
+	
+
+}
+
+40%{
+	width:40px;
+	height:40px;
+	border-radius: 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px;   /* Firefox用 */ 
+	
+}
+
+100%{
+	width:300px;
+	height:40px;
+	border-radius: 20px 5px 5px 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px 5px 5px 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px 5px 5px 20px;   /* Firefox用 */ 
+	
+		
+}
+
+}
+
+@-webkit-keyframes popdown {
+
+0%{
+	width:300px;
+	height:40px;
+	border-radius: 20px 5px 5px 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px 5px 5px 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px 5px 5px 20px;   /* Firefox用 */ 
+}
+
+40%{
+	width:40px;
+	height:40px;
+	border-radius: 20px;        /* CSS3草案 */  
+	-webkit-border-radius: 20px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 20px;   /* Firefox用 */ 
+	opacity:0.9;
+}
+
+100%{
+	
+	width:20px;
+	height:20px;
+	border-radius: 10px;        /* CSS3草案 */  
+	-webkit-border-radius: 10px;    /* Safari,Google Chrome用 */  
+	-moz-border-radius: 10px;   /* Firefox用 */ 
+	opacity:0;
+	display:none;
+}
+
+}
+
+
+@-webkit-keyframes glowth_width{
+	
+	0%{
+		width:0px;
+	}
+	
+	60%{
+		width:0px;	
+	}
+	
+	100%{
+		width:80%;
+	}
+	
+}
+
+@-webkit-keyframes shorter_width{
+	
+	0%{
+		width:80%;
+		opacity:1;
+	}
+	
+	
+	100%{
+		width:0px;
+		opacity:0;
+	}
+	
+}
+
+.onmouse {
+	-webkit-animation-name: popup;
+       -webkit-animation-duration: 1s;
+       -webkit-animation-timing-function: ease-out;
+	   -webkit-animation-fill-mode:both;
+}
+
+.onAnnotation {
+	-webkit-animation-name: popup;
+       -webkit-animation-duration: 1s;
+       -webkit-animation-timing-function: ease-out;
+	   -webkit-animation-fill-mode:both;
+}
+
+.closeAnnotation {
+	-webkit-animation-name: popdown;
+       -webkit-animation-duration: 1s;
+       -webkit-animation-timing-function: ease-out;
+	   -webkit-animation-fill-mode:both;
+}
+
+.testonmouse {
+	display:none;
+}	
+
+
+.showText {
+	-webkit-animation-name: glowth_width;
+       -webkit-animation-duration: 1s;
+       -webkit-animation-timing-function: ease-out;
+	   -webkit-animation-fill-mode:both;	
+}
+
+.hideText {
+	-webkit-animation-name: shorter_width;
+       -webkit-animation-duration: 0.5s;
+       -webkit-animation-timing-function: ease-out;
+	   -webkit-animation-fill-mode:both;	
+}
+
+
+/*+++++ animation sample ++++++++++++*/
+
+@-webkit-keyframes mycolor {
+
+0%{
+        background-color: red;
+-webkit-transform: rotate(0deg);
+}
+
+40%{
+background-color: darkblue;
+-webkit-transform: rotate(-10deg);
+}
+
+
+70%{
+background-color: yellow;
+-webkit-transform: rotate(10deg);
+}
+
+100%{
+background-color: red;
+-webkit-transform: rotate(0deg);
+}
+
+}
+
+div#animation:hover{
+       -webkit-animation-name: mycolor;
+       -webkit-animation-duration: 5s;
+       -webkit-animation-timing-function: linear;
+}
+
+
+/*++++++++++*/
+
+p.p_a {
+	position:relative;
+	width:300px;
+	top:50px;	
+	left:100px;
+}
